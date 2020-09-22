@@ -350,7 +350,6 @@ button:focus {
     url('../assets/DSC_0969_new.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -371,36 +370,35 @@ button:focus {
       url('../assets/DSC_0969_new_1024.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* background-position: 70%; */
-    background-position: 20%;
     font-size: 0.5rem;
   }
 }
 
 .header-container {
-  min-width: 1140px;
+  max-width: 140rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  height: auto;
+  height: 80vg;
   margin: 0 auto;
   margin-top: 6rem;
 }
 
 .header-container > div {
+  /* background-color: red; */
 }
 
 .scroll-down {
   margin-top: auto;
   color: #fff;
   justify-content: end;
-  justify-self: end;
-  font-size: 400%;
+  justify-self: flex-end;
+  /* margin-top: 10vh; */
+
   /* position: absolute; */
-  /* bottom: 4%; */
+  /* bottom: 2rem; */
   z-index: 9;
   /* width: 100%; */
   /* text-align: center; */
@@ -410,6 +408,7 @@ button:focus {
   animation: upAnddown 1s infinite !important;
   -webkit-animation-timing-function: ease-in-out !important;
   animation-timing-function: ease-in-out !important;
+  margin: 100px 0;
 }
 
 #scroll-arrow {
@@ -417,15 +416,21 @@ button:focus {
   margin-bottom: auto;
 }
 
+@media (max-width: 1200px) {
+  .scroll-down {
+    /* bottom: 20%; */
+  }
+}
+
 @media (max-width: 767px) {
   .scroll-down {
-    bottom: 20%;
+    /* bottom: 20%; */
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .scroll-down {
-    bottom: 15%;
+    /* bottom: 15%; */
   }
 }
 @keyframes upAnddown {
