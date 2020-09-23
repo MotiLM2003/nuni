@@ -408,7 +408,8 @@ button:focus {
   animation: upAnddown 1s infinite !important;
   -webkit-animation-timing-function: ease-in-out !important;
   animation-timing-function: ease-in-out !important;
-  margin: 100px 0;
+  margin: 10rem 0;
+  transition: all 0.3s ease;
 }
 
 #scroll-arrow {
@@ -428,9 +429,9 @@ button:focus {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-height: 887px) {
   .scroll-down {
-    /* bottom: 15%; */
+    margin: 1.8rem 0;
   }
 }
 @keyframes upAnddown {
