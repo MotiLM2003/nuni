@@ -157,17 +157,25 @@ $(document).scroll(function () {
 
 //#region Prevent bodyscroll on collapse scroll
 
-$('#navbarCollapse').on('hide.bs.collapse', function () {
-  $('body').removeClass('noscroll');
-});
-
-// $('#navbarCollapse').on('show.bs.collapse', function () {
-
-//   $('body').addClass('noscroll')
+// $('#navbarCollapse').on('hide.bs.collapse', function () {
+//   $('body').removeClass('noscroll');
 // });
 
-$('#navbarCollapse').on('shown.bs.collapse', function () {
-  $('body').addClass('noscroll');
+// // $('#navbarCollapse').on('show.bs.collapse', function () {
+
+// //   $('body').addClass('noscroll')
+// // });
+
+// $('#navbarCollapse').on('shown.bs.collapse', function () {
+//   $('body').addClass('noscroll');
+// });
+
+document.querySelector('.nav_menu ').addEventListener('click', () => {
+  const el = document.body;
+  console.log(el);
+  el.classList.contains('noscroll')
+    ? el.classList.remove('noscroll')
+    : el.classList.add('noscroll');
 });
 
 //#endregion
